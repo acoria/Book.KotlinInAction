@@ -28,14 +28,16 @@ fun lambdaNotation(){
     people.maxBy{ it.age }
     //long notation
     people.maxBy({ p: Human -> p.age })
-    //the last argument of a function call can be moved out of the parentheses -> here there is only one argument in maxBy-function
+    //the last argument of a function call can be moved out of the parentheses
+    // -> here there is only one argument in maxBy-function
     people.maxBy() { p: Human -> p.age }
     //when the lambda is the only argument to a function, the empty parentheses can be removed
     people.maxBy { p: Human -> p.age}
 
-    //mentioning the name of the parameter is not necessary with only one parameter
+    //mentioning the name of the parameter is not necessary with only one parameter but possible
     people.maxBy( selector = {p: Human -> p.age} )
-    //different notation (if lambda delegates to a function or property, it can be replaced by a member reference)
+    //different notation (if lambda delegates to a function or property, it can be replaced by
+    // a member reference)
     people.maxBy(Human::age)
 }
 
@@ -85,6 +87,7 @@ fun main() {
 
     val humanAge = Human::name
     println(people.joinToString(transform = humanAge))
+
     run(::salute)
 }
 

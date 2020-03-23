@@ -1,5 +1,7 @@
 package com.example.kotlininaction
 
+//p.91: Class delegation
+//mit "by" werden alle Methodenaufrufe an die übergebene Klasse weitergereicht
 
 interface IAnimal{
     fun kick()

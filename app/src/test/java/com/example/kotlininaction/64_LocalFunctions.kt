@@ -1,10 +1,9 @@
 package com.example.kotlininaction
 
-import java.lang.IllegalArgumentException
-import java.util.*
-
 class User(val id: Int, val name: String, val address: String)
 
+
+//additional local functions replacing a utils class
 fun saveUser(user:User){
     if (user.name.isEmpty()){
         throw IllegalArgumentException(

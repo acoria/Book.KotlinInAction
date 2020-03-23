@@ -1,5 +1,9 @@
 package com.example.kotlininaction
 
+//Sealed classes: Resembles an enum -> contains data classes to ensure only certain types of
+//subclasses can have a sealed superclass
+//Simplifies when-statements because it is clear which types are to be expected
+
 interface Expression
 
 sealed class SealedExpressions: Expression {

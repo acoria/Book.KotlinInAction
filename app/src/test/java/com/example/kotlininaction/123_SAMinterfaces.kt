@@ -2,6 +2,9 @@ package com.example.kotlininaction
 
 import android.view.View
 
+//Java function interfaces == SAM single abstract interface
+//An interface with only one abstract method, e.g. View.OnClickListener with OnClick(v: View)
+
 fun main() {
 
 //    objectExpressionVsLambda()

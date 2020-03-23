@@ -9,10 +9,11 @@ class Woman(val name: String){
                     """.trimIndent())
             field = newAdress
         }
+
 }
 
 class LengthCounter{
-    //private setter
+    //private setter -> property can no longer be changed from outside the class
     var counter: Int = 0
     private set
 

@@ -1,5 +1,7 @@
 package com.example.kotlininaction
 
+//companion objects: a place for factory methods and static members
+
 class ModelClass(val name: String){
     companion object Loader{
         fun fromJson(jsonText: String): ModelClass{
@@ -8,7 +10,6 @@ class ModelClass(val name: String){
         }
     }
 }
-
 
 interface JSONFactory<T>{
     fun fromJSON(jsonText: String) : T

@@ -1,8 +1,6 @@
 package com.example.kotlininaction
 
 import strings.joinToStringTopLevel
-import java.lang.StringBuilder
-import java.util.function.Consumer
 
 class CollectionsInKotlin{
     @JvmOverloads
@@ -24,10 +22,8 @@ class CollectionsInKotlin{
 }
 
 fun main() {
-
 //    getStarted()
 //    playingWithExtensionFunctions()
-
     println(passArbitraryNumberOfArguments("a","b","c","d"))
 }
 

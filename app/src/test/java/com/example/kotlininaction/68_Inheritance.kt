@@ -17,7 +17,7 @@ open class Child: Parent(){
     }
 
     final override fun canOnlyBeOverriddenOnce() {
-        //you will not overwrite me again!
+        //you will not override me again!
     }
 }
 

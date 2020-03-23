@@ -2,6 +2,7 @@ package com.example.kotlininaction
 
 import java.io.File
 
+//Object: a singleton that is instantiated where it is declared
 object Payroll{
     val allEmployees = arrayListOf<Person>()
 
@@ -11,7 +12,6 @@ object Payroll{
             //calculate
         }
     }
-
 }
 
 object CaseInsensitiveFileComparator: Comparator<File>{

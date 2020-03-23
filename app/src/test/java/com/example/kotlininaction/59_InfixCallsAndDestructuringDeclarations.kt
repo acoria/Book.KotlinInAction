@@ -1,5 +1,7 @@
 package com.example.kotlininaction
 
+//Infix calls can be used with regular methods and extension functions that have one required
+//parameter
 
 fun main() {
     val mapWithInfix = mapOf(1 to "one", 2 to "two")

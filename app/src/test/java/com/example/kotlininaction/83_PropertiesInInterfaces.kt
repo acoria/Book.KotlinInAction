@@ -12,6 +12,7 @@ interface Access{
     val nickname: String
 }
 class PrivateAccess(override val nickname: String): Access
+
 class SubscribingAccess(val email: String): Access{
     override val nickname: String
         get() = email.substringBefore('@')

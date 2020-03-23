@@ -9,6 +9,7 @@ fun main(){
 }
 
 class Rectangle(val height: Int, val width: Int){
+    //custom accessors without property
     val isSquare: Boolean
         get() {
             return height == width

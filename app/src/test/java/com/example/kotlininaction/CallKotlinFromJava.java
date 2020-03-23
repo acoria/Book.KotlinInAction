@@ -5,9 +5,9 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Collection;
 
-import strings.ExtensionFunctionExampleKt;
+import strings._54_ExtensionFunctionExampleKt;
 import strings.GiveMeAnotherClassName;
-import strings.JoinKt;
+import strings._50_TopLevelFunctionKt;
 
 public class CallKotlinFromJava {
 
@@ -27,12 +27,12 @@ public class CallKotlinFromJava {
     }
 
     public void callTopLevelFunction(){
-        JoinKt.joinToStringTopLevel(collection, "; ", "<", ">");
+        _50_TopLevelFunctionKt.joinToStringTopLevel(collection, "; ", "<", ">");
         GiveMeAnotherClassName.someTopLevelFunctionToBeCalledInJava();
     }
 
     public void callExtensionFunction(){
-        ExtensionFunctionExampleKt.lastChar("SomeString");
+        _54_ExtensionFunctionExampleKt.lastChar("SomeString");
     }
 
 

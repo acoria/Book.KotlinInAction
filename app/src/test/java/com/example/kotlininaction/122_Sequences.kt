@@ -2,6 +2,11 @@ package com.example.kotlininaction
 
 import kotlin.system.measureTimeMillis
 
+//Operations on sequences (unlike collections) are lazily executed for individually for each
+//element. An operation on a collection creates a copy of the entire transformed list.
+//Sequences allow you to stop executing followup operations on elements when values do not meet
+//a certain criteria (e.g. filter) or a value is found (find-function)
+
 fun main() {
 
     val listOfAMillionEntries = ((1..1000000).toList())

@@ -1,5 +1,7 @@
 package com.example.kotlininaction
 
+//Data classes override the methods equals, hashCode and toString so you do not have to
+
 private class Client(val name: String, val postalCode: Int){
     override fun toString(): String = "${super.toString()}  - Client(name=$name, postalCode=$postalCode)"
     override fun equals(other: Any?): Boolean {
