@@ -21,6 +21,9 @@ fun Employee.countryNameElvised(): String?{
     return country ?: "Unknown"
 }
 
+fun Employee.countryNameElvisedShorter() =
+    company?.address?.country ?: "Unknown"
+
 fun stringLengthSave(s: String?): Int =
     if (s != null) s.length else 0
 
