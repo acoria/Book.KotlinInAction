@@ -63,6 +63,25 @@ fun iterateAnArray(){
         println("$index : $value")
     }
 }
+
+fun createAnArray(){
+    var myMainArray = arrayOf<Array<Int>>()
+
+    for(i in 0..4){
+        var lineArray = arrayOf<Int>()
+        for (j in 0..4){
+            lineArray += j
+        }
+        myMainArray += lineArray
+    }
+
+    for(array in myMainArray){
+        for(value in array){
+            print(value)
+        }
+        println()
+    }
+}
 fun iterateListWithChars(){
     val list = 'A'..'F'
     for((index, value) in list.withIndex()){

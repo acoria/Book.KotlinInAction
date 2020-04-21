@@ -1,7 +1,7 @@
 package com.example.kotlininaction
 
 class Person(val name: String)
-class Animal(val name: String, var isOld: Boolean = true)
+private class Animal(val name: String, var isOld: Boolean = true)
 
 fun main(){
     testPerson()
