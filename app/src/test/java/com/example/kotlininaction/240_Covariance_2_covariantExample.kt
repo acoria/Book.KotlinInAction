@@ -34,3 +34,8 @@ fun spreadMyCoFluVirus(fluViruses: CoHerd<CoFluVirus>){
         feedAll(fluViruses)
     }
 }
+
+//MutableList in Kotlin defined the following:
+//MutableList<out T>
+//correlates to this in Java:
+//MutableList<? extends T>

@@ -4,7 +4,7 @@ package com.example.kotlininaction
 //This only works for inline functions because the coding is copied directly with the
 //type into the specific place and therefore is not deleted.
 
-//does not compile
+//does not compile: "Cannot check for instance of erased type"
 //fun <T> isA(value: Any) = value is T
 
 //as inlined function and the parameter as reified compiles
