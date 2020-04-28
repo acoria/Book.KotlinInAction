@@ -1,8 +1,10 @@
 package com.example.kotlininaction
 
 import strings.joinToStringTopLevel
+//@JvmOverloads: Generates overload methods for Kotlin methods with default parameters in Java
+//for every parameter starting with the last
 
-class CollectionsInKotlin{
+class CollectionsInKotlin {
     @JvmOverloads
     fun <T> joinToString(
         collection: Collection<T>,

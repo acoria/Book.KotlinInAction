@@ -15,9 +15,11 @@ class Rectangle(val height: Int, val width: Int){
             return height == width
         }
 
+    //one liner
     val isHuge: Boolean
         get() = height > 5
 
+    //several lines
     val sayMyName: String
         get() {
             //i could do more stuff here
