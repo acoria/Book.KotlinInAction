@@ -1,12 +1,10 @@
 package com.example.kotlininaction
 
-import kotlin.reflect.KMutableProperty
-import kotlin.reflect.KMutableProperty0
-import kotlin.reflect.KProperty0
-import kotlin.reflect.KProperty1
+import kotlin.reflect.*
 import kotlin.reflect.full.memberProperties
+import kotlin.reflect.full.primaryConstructor
 
-class Northsea(val weather: String = "windy", val oceanHighTideTime: Int)
+data class Northsea(val weather: String = "windy", val oceanHighTideTime: Int)
 
 fun funToPrintNumber(numberToPrint: Int) = println(numberToPrint)
 
@@ -33,6 +31,13 @@ fun main() {
     //call a kFunction - option 2: "invoke"
     kFunction.invoke(98)
 //    kFunction.invoke(76, 78) -> does not compile
+
+    //with "callBy", default parameters are filled with the default values, "call" does not do that
+    val kFunctionPrimaryConstructor = kClass.primaryConstructor!!
+    val paramMap = mapOf(kFunctionPrimaryConstructor.parameters.get(1) to 1200)
+    val newNorthSea = kFunctionPrimaryConstructor.callBy(paramMap)
+    println(newNorthSea)
+
 
     //kFunctions are function types that are synthetic compiler-generated types
     //you can pass any number of arguments
