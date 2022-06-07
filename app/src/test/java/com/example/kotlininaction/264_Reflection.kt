@@ -16,7 +16,7 @@ fun main() {
 
     //get the Kotlin KClass<Northsea> class
     val kClass = northsea.javaClass.kotlin
-
+    
     //access all properties of KClass
     println(kClass.simpleName)
     println("Members:")

@@ -4,16 +4,6 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-//repositories {
-//    maven {
-//        name = "GitHubPackages"
-//        url = uri("https://maven.pkg.github.com/Yobuligo/Demo.Person.Android.API")
-//        credentials {
-//            username = "Acoria" ?: System.getenv("GPR_USER")
-//            password = "b7f042318c00ebef45e038affe5c99dd9788e9f0" ?: System.getenv("GPR_API_KEY")
-//        }
-//    }
-//}
 android {
     compileSdkVersion 28
     defaultConfig {

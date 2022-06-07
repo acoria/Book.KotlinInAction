@@ -4,6 +4,7 @@ package com.example.kotlininaction
 //parameter
 
 fun main() {
+
     val mapWithInfix = mapOf(1 to "one", 2 to "two")
     println(mapWithInfix)
 

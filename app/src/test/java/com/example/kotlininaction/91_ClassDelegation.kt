@@ -22,7 +22,7 @@ class Pegasus(val innerHorse: IAnimal): IAnimal by innerHorse{
         println("Fly")
     }
 }
-
+m
 fun main() {
     Horse().run()
     Pegasus(Horse()).run()
